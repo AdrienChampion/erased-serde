@@ -228,7 +228,7 @@ impl Ok {
         }
     }
 
-    unsafe fn take<T>(self) -> T {
+    pub unsafe fn take<T>(self) -> T {
         unsafe { self.data.take() }
     }
 }
